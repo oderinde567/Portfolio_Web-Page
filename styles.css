@@ -79,11 +79,7 @@ header.header {
   padding: 10px 15px;
   border: none;
   cursor: pointer;
-}
 
-.btn:hover {
-  background: #ff9800;
-}
 
 /* Footer */
 .footer {
