@@ -1,0 +1,95 @@
+/* Applying Roboto font to everything */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color:blue;
+  color:white;
+}
+
+/* Header + Navbar */
+header.header {
+  background: black;
+  padding: 15px 0;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block; /* inline navbar */
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff9800;
+}
+
+/* Sections */
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.section h2 {
+  color:black;
+  margin-bottom: 20px;
+}
+
+/* Resume Table */
+.resume-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.resume-table th, .resume-table td {
+  padding: 10px 15px;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+}
+
+.btn {
+  background:black;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff9800;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}

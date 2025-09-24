@@ -3,30 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Instructions
+Create a file `styles.css`.
+Link it to our HTML project.
+Change the display of the navbar to make it inline.
+Change the font to roboto.
+Add classes attributes to HTML / HTML documents -->
+  <!-- Link to styles.css -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <title>My Portfolio</title>
 </head>
-<body>
+<body class="body">
 
-  <!--Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!--using inline for my Navigation Bar -->
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <!--Home Section -->
-  <section id="home">
+  <section id="home" class="section home">
     <h1>Welcome to My Portfolio</h1>
     <p>This is where I showcase my work and experiences.</p>
   </section>
 
   <!--About Section -->
-  <section id="about">
+  <section id="about" class="section about">
     <h2>About Me</h2>
     <p>Hello! I am a passionate web developer who loves creating clean and functional websites.</p>
     
@@ -39,19 +53,24 @@
   </section>
 
   <!--Work Section -->
-  <section id="work">
+  <section id="work" class="section work">
     <h2>My Work</h2>
     <ul>
-      <li>Project 1 - Supervised residential building for electrical insatallation</li>
+      <li>Project 1 - Supervised residential building for electrical installation</li>
+      </ul>
+      <ul>
       <li>Project 2 - Built an LED chaser for a company</li>
+      </ul>
+      <ul>
       <li>Project 3 - Activated network routers</li>
+      </ul>
     </ul>
   </section>
 
-  <!--Resume Section (using table) -->
-  <section id="resume">
+  <!--Resume Section -->
+  <section id="resume" class="section resume">
     <h2>Resume</h2>
-    <table border="1" cellpadding="5">
+    <table border="1" cellpadding="5" class="resume-table">
       <thead>
         <tr>
           <th>Year</th>
@@ -71,17 +90,14 @@
           <td>Technical Support Engineer</td>
           <td>Intertel Nigeria Limited</td>
         </tr>
-
       </tbody>
-
     </table>
-
   </section>
 
-  <!--Contact Section (using forms) -->
-  <section id="contact">
+  <!--Contact Section -->
+  <section id="contact" class="section contact">
     <h2>Contact Me</h2>
-    <form>
+    <form class="contact-form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br><br>
 
@@ -91,12 +107,12 @@
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-      <button type="submit">Send</button>
+      <button type="submit" class="btn">Send</button>
     </form>
   </section>
 
   <!--Footer -->
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
   </footer>
 
